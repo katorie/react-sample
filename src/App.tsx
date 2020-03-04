@@ -30,7 +30,7 @@ class App extends Component {
         <header>
           <h1>はねバド！　キャラクター一覧</h1>
         </header>
-        <CharacterList school="北小町高校" characters={characters} />
+        <CharacterList school="北小町高校" characters={characters} />  {/* これが Props として子コンポーネントである CharacterList に渡されてる */}
       </div>
     );
   }
