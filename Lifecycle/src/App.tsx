@@ -32,6 +32,7 @@ class App extends Component<{}, AppState> {
   componentDidUpdate = () => {
     const { timeLeft } = this.state;
     if (timeLeft === 0) {
+      alert("60秒たちました！")
       this.reset();
     } 
   };
