@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { Container, List } from 'semantic-ui-react';
 
@@ -30,7 +30,7 @@ const Home: FC<{}> = () => (
     <List as="ul">
       {codes.map(code => (
         <List.Item as="li" key={code}>
-          <Link to={`/characters/${code}`}>{CharacterData[code].school}</Link>
+          <Link to={`/characters/${code}`}>{characterData[code].school}</Link>
         </List.Item>
       ))}
     </List>
